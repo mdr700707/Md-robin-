@@ -1,0 +1,83 @@
+[
+  {
+    "id": "vault-item-1790082594271-78tf",
+    "appName": "Netflix",
+    "category": "social",
+    "username": "myuser@netflix.com",
+    "primaryPassword": "MySecretNet123",
+    "secondaryPassword": "9988",
+    "createdAt": 1790082594272,
+    "updatedAt": 1790082594272,
+    "strength": "strong"
+  },
+  {
+    "id": "vault-item-1",
+    "appName": "Facebook",
+    "category": "social",
+    "username": "user.personal@gmail.com",
+    "primaryPassword": "FbSecure#Pass99!",
+    "secondaryPassword": "849201-FB-2FA",
+    "notes": "Main personal Facebook profile. 2FA enabled on Authenticator.",
+    "url": "https://facebook.com",
+    "createdAt": 1789650568299,
+    "updatedAt": 1789909768299,
+    "isFavorite": true,
+    "strength": "strong"
+  },
+  {
+    "id": "vault-item-2",
+    "appName": "Twitter (X)",
+    "category": "social",
+    "username": "@tech_creator",
+    "primaryPassword": "XPass9#Quantum2026",
+    "secondaryPassword": "PIN: 9382",
+    "notes": "Official Twitter account. Linked with Google 2FA.",
+    "url": "https://x.com",
+    "createdAt": 1789736968299,
+    "updatedAt": 1789996168299,
+    "isFavorite": true,
+    "strength": "strong"
+  },
+  {
+    "id": "vault-item-3",
+    "appName": "Instagram",
+    "category": "social",
+    "username": "creative.shots.official",
+    "primaryPassword": "InstaVibe!778$",
+    "secondaryPassword": "RecovKey: 5543-9821",
+    "notes": "Photography portfolio Instagram handle.",
+    "url": "https://instagram.com",
+    "createdAt": 1789823368299,
+    "updatedAt": 1789996168299,
+    "isFavorite": true,
+    "strength": "strong"
+  },
+  {
+    "id": "vault-item-4",
+    "appName": "Google",
+    "category": "email",
+    "username": "primary.work.email@gmail.com",
+    "primaryPassword": "Ggl#AlphaSec_9921",
+    "secondaryPassword": "BackupCodes: 4492 8821 1109",
+    "notes": "Master Google workspace and drive access.",
+    "url": "https://accounts.google.com",
+    "createdAt": 1789564168299,
+    "updatedAt": 1789823368299,
+    "isFavorite": true,
+    "strength": "strong"
+  },
+  {
+    "id": "vault-item-5",
+    "appName": "Bank Account",
+    "category": "finance",
+    "username": "ACCT-9482019482",
+    "primaryPassword": "NetBanking$78#Pass",
+    "secondaryPassword": "TPIN: 819203",
+    "notes": "Online banking portal. Secondary is the 6-digit transaction PIN.",
+    "url": "",
+    "createdAt": 1789909768299,
+    "updatedAt": 1789996168299,
+    "isFavorite": false,
+    "strength": "strong"
+  }
+]

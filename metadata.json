@@ -1,0 +1,6 @@
+{
+  "name": "MerchMock Studio & Telegram Bot",
+  "description": "Secure dual-password manager vault with Telegram bot integration, encrypted primary and secondary password storage, show/hide visibility controls, and master admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
