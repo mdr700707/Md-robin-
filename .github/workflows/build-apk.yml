@@ -1,0 +1,53 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Web Code
+        run: npm run build --if-present
+
+      - name: Add Capacitor Android
+        run: |
+          npx cap add android || true
+          npx cap sync android || true
+
+      - name: Build APK with Gradle
+        run: |
+          if [ -d "android" ]; then
+            cd android
+            chmod +x gradlew
+            ./gradlew assembleDebug
+          else
+            echo "Android folder missing!"
+            exit 1
+          fi
+
+      - name: Upload APK File
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-vault-app
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          
